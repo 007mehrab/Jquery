@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajax.Data</title>
+	<script src="../../jquery.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+
+			$("#choice").change(function(){
+				//alert("Yes, We can Change the Selection : " + $(this).val());
+
+				if ($(this).val()!='') {
+					$.get(
+
+						'data.php',
+						{what:$(this).val()},
+						function(data){
+							$("#result").html(data);
+						}
+
+						);
+				}
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<form action="">
+		Show List of :
+			<select id="choice">
+				<option value="">Select</option>
+				<option value="Good">Good Guys</option>
+				<option value="Bad">Bad Guys</option>
+
+			</select>
+
+		<p id="result"></p>
+
+	</form>
+	
+</body>
+</html>

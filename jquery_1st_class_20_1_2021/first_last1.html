@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+
+	
+<script>
+
+$(document).ready(function(){
+
+$("#btn1").click(function(){
+    $("div:first").hide();
+  });
+
+$("#btn2").click(function(){
+    $("div:last").hide();
+  });
+
+
+});
+</script>
+
+
+<div> This is First paragraph</div><br>
+
+<div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, numquam maxime, sint illo impedit optio tempore voluptate. Ipsa distinctio similique, officiis, ipsum omnis vero consequuntur iure sunt est. Modi, natus.</div><br>
+
+<button id="btn1">Click here</button>
+<button id="btn2">Click here</button>
+
+
+	
+</body>
+</html>
