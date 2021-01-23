@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		$(document).ready(function(){
+
+			$("#btn").click(function(){
+
+				$("ul li:first-child").hide();
+
+			});
+
+		});
+	</script>
+
+	<button id="btn">Click here</button>
+
+	<p>List one</p>
+	<ul>
+		<li>Apple</li>
+		<li>Mango</li>
+		<li>Banana</li>
+		<li>Orange</li>
+	</ul>
+
+	<p>List Two</p>
+	<ul>
+		<li>Milk</li>
+		<li>Tea</li>
+		<li>Coffee</li>
+	</ul>
+
+</body>
+</html>
