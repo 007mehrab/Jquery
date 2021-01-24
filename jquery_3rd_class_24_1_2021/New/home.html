@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../../jquery.min.js"></script>
+	<title>Home page</title>
+
+	<script>
+		$(document).ready(function(){
+			$("#show").click(function(){
+				$("#footer").load('footer.html');
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>This is a home page</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Eaque, voluptas debitis ducimus beatae quibusdam voluptatem nulla assumenda vero libero voluptatibus accusamus necessitatibus architecto vel officia commodi consequuntur nobis ipsa laborum.</p>
+
+	<div id="footer">
+		<a href="#" id="show">Click here for footer</a>
+	</div>
+	
+</body>
+</html>
