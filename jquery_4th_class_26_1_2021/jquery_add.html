@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../jquery.min.js"></script>
+
+
+<!-- <script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $(".para").append(" <p>Appended text .</p>");      //append
+  });
+
+});
+
+</script>
+
+<button id="btn1">Append text</button>
+
+<p class="para"> This is first Line</p> -->
+
+
+
+<!-- <script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").prepend("<b>Prepended text</b>. ");
+  });
+  $("#btn2").click(function(){
+    $("ol").prepend("<li>Prepended item</li>");
+  });
+});
+</script> -->
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").append(" <b>Appended text</b>.");         //append
+		});
+
+		$("#btn2").click(function(){
+			$("ol").prepend("<li>Appended item</li>");       //append  
+		});
+
+		$("#btn3").click(function(){
+			$("ol").after("<li>Appended item</li>");         //after
+		});
+		$("#btn4").click(function(){
+            $("ol").before("<b>Before</b>");                 //append
+  });
+	});
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+	<button id="btn1">Append text</button>
+	<button id="btn2">Prepend</button>
+	<button id="btn3">After</button>
+	<button id="btn4">Before</button>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<ol>
+		<li>Bangladesh</li>
+		<li>India</li>
+		<li>Japan</li>
+		<li>Srilanka</li>
+	</ol>
+
+
+</body>
+</html>

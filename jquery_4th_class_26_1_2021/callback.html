@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery.min.js"></script>
+
+
+<!-- with Callback -->
+
+
+<!-- <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script> -->
+
+
+
+<!-- without Callback -->
+
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide(1000);
+    alert("The paragraph is now hidden");
+  });
+});
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+
+</body>
+</html>

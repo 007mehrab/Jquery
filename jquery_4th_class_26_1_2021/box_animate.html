@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery.min.js"></script>
+
+<!-- <script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script>  -->
+
+
+
+ <script>
+$(document).ready(function(){
+$(".box").animate({height: '200px',width:'200px'},"slow");
+$(".box").animate({height: '300px',width:'300px',},"slow");
+$(".box").animate({height: '400px',width:'400px',},"slow");
+$(".box").animate({height: '500px',width:'500px',},"slow");
+$(".box").animate({height: '400px',width:'400px',},"slow");
+$(".box").animate({height: '300px',width:'300px',},"slow");
+$(".box").animate({height: '200px',width:'200px',},"fast");
+
+});
+
+
+
+</script>
+
+
+</head>
+<body>
+
+<button>Start Animation</button><br><br><br>
+
+<div class="box" style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>

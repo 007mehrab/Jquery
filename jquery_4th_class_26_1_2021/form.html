@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="../jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			$("#name").val("Mehrab");              //Default value
+			$("#email").val("mahrab.bhuiyan@gmail.com");
+			$("#address").val("Dkaka");address
+
+			$("#submit").click(function(){
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var address = $("#address").val();
+				var info ="Name : "+ name + "<br> Email : " + email + "<br> Address : " + address;
+				$("#show").html(info);
+			});
+
+		});
+
+	</script>
+
+	<title>Form</title>
+</head>
+<body>
+
+	<form action="">
+		<input type="text" name="name" id="name"><br><br>
+		<input type="text" name="email" id="email"><br><br>
+		<textarea name="address" id="address" cols="22" rows="8"></textarea>
+		<br><br>
+		<input type="button" name="submit" id="submit" value="Submit">
+	</form><br><br>
+	
+	<div id="show"></div>
+</body>
+</html>

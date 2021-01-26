@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+alert($("#w3s").attr("href"));
+});
+$("#btn2").click(function(){
+alert($("#img1").attr("src"));
+});
+});
+</script>
+</head>
+<body>
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<p><img src="tiger.jpg" alt="" id="img1"></p>
+<button id="btn1">Show href Value</button>
+<button id="btn2">Show img Value</button>
+
+</body>
+</html>
