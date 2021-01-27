@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="../jquery.min.js"></script>
+<style>
+.featured{
+font-size: 28px;
+color: #394FF0;
+font-weight: bold;
+}
+.topstory{
+background-color: #F73C3C;
+color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#para1").addClass("featured");
+$("#para1").removeClass("topstory");
+});
+$("#btn2").click(function(){
+$("#para1").removeClass("featured");
+$("#para1").addClass("topstory");
+});
+
+
+});
+
+
+
+</script>
+
+<button id="btn1">featured</button>
+<button id="btn2">topstory</button>
+<p id="para1">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Cupiditate molestiae tempora sunt voluptatibus accusantium voluptate accusamus eveniet. Accusantium, facere earum pariatur perferendis odit fugit corporis voluptate temporibus adipisci quis sapiente.</p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .ancestors * { 
+      display: block;
+      border: 2px solid lightgrey;
+      color: lightgrey;
+      padding: 5px;
+      margin: 15px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("span").parent().css({"color": "red", "border": "2px solid red"});
+      $("li").parent().css({"color": "red", "border": "2px solid blue"});
+      $("ul").parent().css({"color": "red", "border": "2px solid green"});
+      $("div").parent().css({"color": "red", "border": "2px solid gray"});
+
+      
+    });
+  </script>
+</head>
+<body>
+
+  <div class="ancestors">
+    <div style="width:500px;">div (great-grandparent)
+      <ul>ul (grandparent)  
+        <li>li (direct 1)
+          <span>span</span>
+        </li>
+        <li>li (direct 2)
+          <span>span</span>
+        </li>
+        <li>li (direct 3)
+          <span>span</span>
+        </li>
+      </ul>   
+    </div>
+  </div>
+
+</body>
+</html>

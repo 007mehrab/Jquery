@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="../jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("li.start").siblings().css({"color": "red"});
+});
+</script>
+</head>
+<body>
+
+
+  <ul>
+    <li>li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li class="start">li (sibling)</li>               <!-- Sibling -->
+    <li>li (the next sibling of "start")</li>
+    <li>li (the next sibling of "start")</li>
+  </ul>   
+
+
+
+</body>
+</html>

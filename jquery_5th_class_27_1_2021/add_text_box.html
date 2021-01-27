@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Text Box</title>
+
+	<style type="text/css">
+		fieldset{width:450px;}
+		ul{padding:2px;list-style:none;}
+		label{float:left;width:100px;}
+	</style>
+
+	<script src="../jquery.min.js"></script>
+
+	<script>
+
+		$(document).ready(function(){
+			$("#add").click(function(){
+				var x = '<li>';
+				x +="<label>Name</label><input type='text' value=''>";
+				x +="<input type='button' value='Remove' class='remove'>";
+				x +='</li>';
+
+				$("#sites").append(x);
+
+				$(".remove").on('click' ,function(){
+			    $(this).parent('li').remove();
+
+			  });
+
+		   });
+
+		});
+
+	</script>
+
+</head>
+<body>
+	
+
+	<form action="" method="post">
+		<fieldset>
+			<legend>Websites you visit daily</legend>
+			<ul id="sites">
+				<li>
+					<label>Name</label><input type="text" value=""/>
+				</li>
+			</ul>
+			<input type="button" id="add" value="Add More"/>
+		</fieldset>
+	</form>
+
+</body>
+</html>
