@@ -6,6 +6,35 @@ body{font-family:"Trebuchet MS",verdana;width:450px;}
  .error{ color:red; }
 #info{color:#008000;font-weight:bold; }
 </style>
+
+
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function ()
+{
+$('#check').click(validate);
+function validate()
+{
+var dataValid = true;
+$('#info').html('');
+$('.required').each(function()
+{
+ var cur = $(this);
+cur.next('span').remove();
+if ($.trim(cur.val()) == '')
+ {
+cur.after('<span class="error"> Mandatory field </span>');
+dataValid = false;
+}
+});
+if(dataValid)
+{
+$('#info').html('Validation OK');
+}
+}
+ });
+</script>
+
  </head>
 <body>
 <form>
