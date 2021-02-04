@@ -21,7 +21,7 @@ $('.required').each(function()
 {
  var cur = $(this);
 cur.next('span').remove();
-if ($.trim(cur.val()) == '')
+if ($.trim(cur.val()) == '')            //trim space remove kore
  {
 cur.after('<span class="error"> Mandatory field </span>');
 dataValid = false;
