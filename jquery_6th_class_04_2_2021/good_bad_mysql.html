@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>jQuery.get()</title>
+
+	<link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function ()
+		{
+			$('#choice').change(function()
+			{
+				if($(this).val() != '')
+				{
+					$.get(
+						'good_bad_mysql_data.php',
+						{ what: $(this).val() },
+						function(data)
+						{
+							$('#result').html(data);
+						});
+				}
+			});
+		});
+	</script><br><br>
+<center>
+	<form>
+		<p>
+			Show list of:
+			<select id="choice">
+				<option value="">select</option>
+				<option value="good">Good Guys</option>
+				<option value="bad">Bad Guys</option>
+			</select>
+		</p>
+		<p id="result"></p>
+	</form>
+	</center>
+</body>
+</html>
