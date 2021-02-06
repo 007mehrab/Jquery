@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> jQuery trigger() method </title>  
+<script src="../jquery.min.js"></script>  
+<style>  
+#p2 {  
+border: 2px solid red;  
+width: 60px;  
+text-align: center;  
+}  
+</style>  
+<script>  
+$(document).ready(function(){  
+  $("p").click(function(){  
+    $("#tf").trigger("select");  
+  });  
+    $("#tf").select(function(){  
+    $("#tf").css({"backgroundColor": "yellow", "fontSize": "25px"});  
+    $("body").css({"backgroundColor": "lightgreen", "fontSize": "25px"});  
+  });  
+});  
+</script>  
+</head>  
+<body>  
+<h4> This is an example of using the jQuery trigger() method </h4>  
+<input id = "tf" type = "text" value = "Text here...">  
+<br>  
+<p id = "p1"> Click the following text to see the effect. </p>  
+<p id = "p2"> Click me </p>  
+  
+</body>  
+</html>  
