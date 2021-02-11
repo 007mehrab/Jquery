@@ -1,0 +1,38 @@
+
+create database mycompany;
+
+===================
+
+create table users(
+  id int(10) NOT NULL auto_increment,
+  username varchar(50) NOT NULL,
+  password varchar(50) NOT NULL,
+  primary key (id)
+);
+
+===================
+
+create table batches(
+  id int(10) NOT NULL auto_increment,
+  round varchar(50) NOT NULL,
+
+  primary key (id)
+);
+
+create table students(
+  id int(10) NOT NULL auto_increment,
+  name varchar(50) NOT NULL,
+  course varchar(50) NOT NULL,
+  round varchar(50) NOT NULL,
+  primary key (id)
+);
+
+
+====================
+
+SELECT batches.id, name, course,students.round
+FROM
+batches, students
+
+WHERE
+batches.round = students.round;

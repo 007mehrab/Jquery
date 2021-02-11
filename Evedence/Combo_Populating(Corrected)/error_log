@@ -1,0 +1,10 @@
+[26-Jan-2021 09:07:42 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'exampledb' in C:\xampp\htdocs\JQuery\abc\results.php on line 2
+[26-Jan-2021 09:07:42 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\JQuery\abc\results.php on line 19
+[26-Jan-2021 09:08:25 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'exampledb' in C:\xampp\htdocs\JQuery\abc\results.php on line 2
+[26-Jan-2021 09:08:25 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\JQuery\abc\results.php on line 19
+[26-Jan-2021 09:08:31 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'exampledb' in C:\xampp\htdocs\JQuery\abc\results.php on line 2
+[26-Jan-2021 09:08:31 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\JQuery\abc\results.php on line 19
+[26-Jan-2021 09:08:35 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'exampledb' in C:\xampp\htdocs\JQuery\abc\results.php on line 2
+[26-Jan-2021 09:08:35 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\JQuery\abc\results.php on line 19
+[26-Jan-2021 09:26:12 Europe/Berlin] PHP Warning:  mysqli::query(): Empty query in C:\xampp\htdocs\JQuery\abc\results.php on line 21
+[26-Jan-2021 09:26:19 Europe/Berlin] PHP Warning:  mysqli::query(): Empty query in C:\xampp\htdocs\JQuery\abc\results.php on line 21

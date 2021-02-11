@@ -1,0 +1,27 @@
+
+create database jquery;
+
+===================
+
+create table users(
+  id int(10) NOT NULL auto_increment,
+  email varchar(50) NOT NULL,
+  password varchar(50) NOT NULL,
+  primary key (id)
+);
+
+===================
+
+create table division(
+  id int(10) NOT NULL auto_increment,
+  div_name varchar(50) NOT NULL,
+
+  primary key (id)
+);
+
+create table district(
+  id int(10) NOT NULL auto_increment,
+  dis_name varchar(50) NOT NULL,
+  div_id varchar(50) NOT NULL,
+  primary key (id)
+);
